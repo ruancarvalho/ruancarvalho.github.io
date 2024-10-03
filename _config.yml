@@ -18,21 +18,81 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Ruan Carvalho
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Software Development
-baseurl: ""     # place folder name if the site is served in a subfolder
-domain: ruancarvalho.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-url: https://ruancarvalho.github.io  # the base hostname and protocol for your site, e.g. http://example.com
-twitter_username: ruancarvalho
-github_username:  ruancarvalho
+# Site settings
+title: "Ruan Carvalho"
+email: ""
+description: "Software Development Insights, Tutorials, and Projects"
+baseurl: ""  # Leave empty if the site is deployed at the root of a domain
+domain: "ruancarvalho.github.io"
+url: "https://ruancarvalho.github.io"  # Full URL, ensure HTTPS
+twitter_username: "ruancarvalho"
+github_username: "ruancarvalho"
+
+# SEO and Social
+lang: "en"  # Set the language for your site
+timezone: "Europe/Lisbon"  # Set your local timezone
+social:
+  twitter: "https://twitter.com/ruancarvalho"
+  github: "https://github.com/ruancarvalho"
+  linkedin: "https://www.linkedin.com/in/ruancarvalho"  # Add your LinkedIn profile
 
 # Build settings
-permalink: /:year/:month/:title:output_ext
-theme: minima
+permalink: /:year/:month/:title/  # Cleaner permalinks
+theme: minima  # Minima is a simple theme. You can change to a custom theme or modify Minima.
 plugins:
-  - jekyll-feed
+  - jekyll-feed   # Generates an RSS feed for your blog
+  - jekyll-sitemap  # Automatically generates a sitemap.xml
+  - jekyll-seo-tag  # Adds SEO meta tags in your blog
+  - jekyll-paginate  # Adds pagination for your blog posts
+  - jekyll-archives  # Enables archives by year, category, etc.
+  - jekyll-assets  # Optimizes your site assets (CSS, JS, images)
+  - jekyll-minifier  # Minifies HTML for faster load times
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge  # Syntax highlighter for code blocks
+kramdown:
+  input: GFM  # GitHub Flavored Markdown
+
+# Pagination
+paginate: 5  # Number of posts per page
+paginate_path: "/page:num/"  # Path for paginated pages
+
+# SEO optimization
+title_separator: " | "  # Customize the title separator for SEO (e.g., "Post Title | Ruan Carvalho")
+google_analytics: "UA-XXXXXXXX-X"  # Replace with your Google Analytics tracking ID
+
+# Theme customization (optional)
+minima:
+  social_links:
+    twitter: "https://twitter.com/ruancarvalho"
+    github: "https://github.com/ruancarvalho"
+    linkedin: "https://www.linkedin.com/in/ruancarvalho"
+
+# Exclude these files from production build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+
+# Include these files in production
+include:
+  - _pages  # If you store custom pages in a folder called _pages
+
+# GitHub Pages settings
+github:
+  is_project_page: false  # Set true if this is hosted under a project repo
+
+# Optional: Customize future-proofing content (add or remove as necessary)
+future: false  # Allows posts with future dates to appear
+show_drafts: false  # Don’t show drafts in production
+show_excerpts: false
+
+# Compression
+compress_html:
+  clippings: all  # Optimize and compress all HTML
 
 # Exclude from processing.
 # The following items will not be processed, by default.

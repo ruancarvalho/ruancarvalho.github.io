@@ -15,7 +15,10 @@ gem "minima", "~> 2.5"
 gem "github-pages", "~> 232", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-feed"       # Generate an RSS feed
+  gem "jekyll-seo-tag"    # SEO meta tags for better search engine indexing
+  gem "jekyll-sitemap"    # Generate a sitemap for SEO
+  gem "jekyll-paginate"   # Pagination for blog posts
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

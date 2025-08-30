@@ -4,6 +4,7 @@ draft: false
 title: 'Configuring Git to use HTTPS Protocol'
 categories: ['Tutorials']
 tags: ['Git']
+url: 'config-git-https-protocol'
 ---
 
 A few years ago, I was trying to clone the [angular-seed](https://github.com/angular/angular-seed) repository. At the time, I was using bower (yeah, long time ago) to install dependencies.

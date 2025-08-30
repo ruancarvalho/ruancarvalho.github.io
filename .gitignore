@@ -1,0 +1,29 @@
+# -------------------------------
+# Hugo build artifacts
+# -------------------------------
+/public/
+/resources/
+/hugo_stats.json
+
+# PaperMod / Hugo themes
+# Keep submodule tracked, but ignore vendored themes if copied manually
+/themes/*/
+/!themes/PaperMod/        # Allow PaperMod submodule
+
+# -------------------------------
+# OS & editor files
+# -------------------------------
+.DS_Store
+Thumbs.db
+
+# VS Code settings (keep extensions.json + settings.json only)
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# -------------------------------
+# Logs, temp, caches
+# -------------------------------
+*.log
+.cache/
+tmp/

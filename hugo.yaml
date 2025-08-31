@@ -1,5 +1,5 @@
 baseURL: "/"  # adjust below if using user site
-title: "ruancarvalho.com"
+title: "Ruan Carvalho"
 theme: "PaperMod"
 languageCode: "en-us"
 
@@ -36,7 +36,7 @@ params:
   description: "Technical Blog"
   keywords: []
   author: "Ruan Carvalho"
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  images: [""]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -57,10 +57,13 @@ params:
   showtoc: false
   tocopen: false
 
+  label:
+    text: 'ruancarvalho.com'
+
   # home-info mode
   homeInfoParams:
     Title: "Hello and Welcome..."
-    Content: "Here you can find articles and notes about the lessons I've learned on my career as a Software Developer, Tech Lead, Teacher, Speaker, etc."
+    Content: "On this site I you can find my notes about software development, technical leadership, management, career and lessons learned on the way."
 
   socialIcons:
     - name: github

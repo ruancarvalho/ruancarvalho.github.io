@@ -4,7 +4,7 @@ draft: false
 title: 'Hello World'
 url: 'hello-world'
 ---
-_Post Mortem._
+_Post Recovered._
 
 This post is only to remember the milestone of my very first website, which was published online in 2008.
 

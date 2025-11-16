@@ -30,6 +30,9 @@ menu:
       url: /contact/
       weight: 40
 
+permalinks:
+  posts: "/posts/:slug/"
+
 params:
   #env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Ruan Carvalho
@@ -41,6 +44,9 @@ params:
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
+  ShowDate: false
+  ShowLastmod: false
+  ShowPostMeta: false
   ShowReadingTime: true
   ShowShareButtons: false
   ShowPostNavLinks: true
@@ -63,7 +69,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hello and Welcome..."
-    Content: "On this site I you can find my notes about software development, technical leadership, management, career and lessons learned on the way."
+    Content: "Here I share my thoughts on software development, tech leadership, management, and the lessons I've learned during my career."
 
   socialIcons:
     - name: github
